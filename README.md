@@ -1,7 +1,4 @@
-# Food Delivery Dark Kitchen Operations Intelligence Platform
-
-## Industry
-**E-commerce – Online Food Delivery & Dark Kitchen Operations**
+# **E-commerce – Online Food Delivery & Dark Kitchen Operations**
 
 ## Project Overview
 
@@ -10,15 +7,6 @@ The **Food Delivery Dark Kitchen Operations Intelligence Platform** is a data an
 The project uses **MySQL and SQL** for database creation, data validation, and analysis, and **Microsoft Power BI** for interactive dashboards and business intelligence reporting.
 
 The solution analyzes customers, kitchens, riders, menu items, orders, inventory, complaints, and refunds to identify operational bottlenecks, customer experience issues, financial performance, and improvement opportunities.
-
-### Business Areas Covered
-- Order and revenue performance
-- Kitchen operations
-- Delivery and rider performance
-- Customer experience and retention
-- Inventory and food waste
-- Complaints and refunds
-- Discounts and profitability
 
 ## Project Objectives
 
@@ -33,17 +21,6 @@ The solution analyzes customers, kitchens, riders, menu items, orders, inventory
 - Build interactive Power BI dashboards for management reporting.
 - Generate actionable business recommendations.
 
-## Tools & Technologies
-
-| Tool / Technology | Purpose |
-|---|---|
-| **MySQL** | Database creation and data storage |
-| **SQL** | Data validation, querying, and analysis |
-| **Microsoft Power BI** | Interactive dashboard development |
-| **DAX** | KPI and calculated measure creation |
-| **Power Query** | Data transformation and preparation |
-| **Microsoft Excel** | Dataset source and data inspection |
-| **GitHub** | Version control and documentation |
 
 ## Dataset Description
 
@@ -62,107 +39,9 @@ The project uses a **Dark Kitchen Enterprise Dataset** containing multiple relat
 | **Complaints** | Complaint type, status, and resolution time |
 | **Refunds** | Refund amount and refund reason |
 
-### Key Orders Columns
-
-```text
-OrderID, CustomerID, KitchenID, RiderID, OrderDate,
-PreparationTime, DeliveryTime, OrderStatus, TotalAmount,
-Discount, TotalCost, CustomerRating, DistanceKM,
-PaymentMethod, DeliveryPartner, Weather, TrafficLevel,
-TimeSlot, OrderPriority, CouponCode, DiscountType,
-PreparationDelayReason, DeliveryDelayReason
-```
-
-### Order_Items Columns
-
-```text
-OrderItemID, OrderID, MenuID, Quantity
-```
-
 ## Database Design
 
 The database follows a relational structure with **Orders** acting as the central transaction table.
-
-### Master / Reference Tables
-- Customers
-- Kitchens
-- Riders
-- Menu
-- Calendar
-
-### Transaction / Operational Tables
-- Orders
-- Order_Items
-- Inventory
-- Complaints
-- Refunds
-
-### Logical Relationships
-
-```text
-Customers ────────┐
-Kitchens ─────────┤
-Riders ───────────┤
-                  ↓
-               ORDERS
-               /    \
-              /      \
-     ORDER_ITEMS     COMPLAINTS
-          │              │
-          ↓              ↓
-        MENU          REFUNDS
-
-Kitchens ───────→ Inventory
-Calendar ────────→ Orders
-```
-
-## SQL Analysis
-
-SQL was used to create the database, create tables, inspect data, validate row counts, and support business analysis.
-
-### Database Creation
-
-```sql
-CREATE DATABASE DarkKitchenDB;
-USE DarkKitchenDB;
-```
-
-### Tables Created
-
-```text
-Customers
-Kitchens
-Riders
-Menu
-Calendar
-Orders
-Order_Items
-Inventory
-Complaints
-Refunds
-```
-
-### Data Validation
-
-```sql
-SHOW TABLES;
-SHOW CREATE TABLE Orders;
-SELECT * FROM DarkKitchenDB.orders;
-```
-
-A `UNION ALL` query was also used to validate the number of records in each table.
-
-### SQL Analysis Areas
-- Order volume
-- Revenue and cost
-- Kitchen performance
-- Rider performance
-- Cancellation analysis
-- Customer analysis
-- Inventory and food waste
-- Complaint analysis
-- Refund analysis
-- Data validation
 
 ## Power BI Dashboard
 
@@ -310,25 +189,14 @@ Food-Delivery-Dark-Kitchen-Operations-Intelligence/
 
 The project contains four Power BI dashboard pages
 
-1. **Executive Overview**
-
-<img width="2196" height="1250" alt="Executive Overview" src="https://github.com/user-attachments/assets/25f6fe51-711b-4d42-a58b-c5d400d7cdc0" />
-
-
-2. **Kitchen & Operations Analytics**
+1. **Kitchen & Operations Analytics**
    
 <img width="2202" height="1246" alt="Kitchen And Operation Analytics" src="https://github.com/user-attachments/assets/0a9f8844-4bd0-46b3-a9c5-4473d93e033d" />
 
 
-3. **Delivery & Customer**
+2. **Delivery & Customer**
 
 <img width="2192" height="1250" alt="Delivery And Customer" src="https://github.com/user-attachments/assets/d310abb0-cd94-4fd4-a347-058ed7a70be8" />
-
-
-4. **Financial Intelligence**
-
-<img width="2198" height="1248" alt="Financial Intelligence" src="https://github.com/user-attachments/assets/227025e5-3ec7-47ec-b82c-a45952d1d8aa" />
-
 
 ## How to Run the Project
 
@@ -392,36 +260,10 @@ Delivery & Customer
 Financial Intelligence
 ```
 
-## Recommendations
-
-- Reduce cancellations by monitoring preparation and delivery delay reasons.
-- Optimize kitchen staffing according to demand and capacity.
-- Improve order accuracy to reduce Wrong Item and Missing Item complaints.
-- Improve packaging and temperature-control processes.
-- Optimize rider allocation using delivery time, distance, traffic, and rider performance.
-- Monitor discounts based on their impact on profitability.
-- Analyze refunds to identify avoidable financial leakage.
-- Use inventory analytics to reduce food waste.
-- Create targeted retention campaigns for repeat and high-value customers.
-- Maintain Power BI dashboards as a recurring management reporting system.
-
-## Future Enhancements
-
-- Real-time order monitoring
-- Predictive demand forecasting
-- Machine-learning-based cancellation prediction
-- Delivery-time prediction
-- Automated inventory-reorder recommendations
-- Customer churn prediction
-- Dynamic rider allocation
-- Automated Power BI data refresh
-- Integration with food-delivery APIs
-- Advanced profitability and contribution-margin analysis
-
 ## Author
 
-### **VARSHA S** (AF05247875)
-Data & Business Analyst With AI (Anudip Foundation--Pallavaram, Chennai).
+### **Sayed alnaash M G** (AF05320426)
+AIML  (Anudip Foundation-Chennai).
 
 **Project:** Food Delivery Dark Kitchen Operations Intelligence Platform
 
@@ -431,6 +273,3 @@ Data & Business Analyst With AI (Anudip Foundation--Pallavaram, Chennai).
 
 **Project Focus:** Data Analytics | Business Intelligence | Operations Analytics | Customer Analytics | Financial Analytics
 
-## License
-
-This project is created for **educational, portfolio, and data analytics demonstration purposes**.
